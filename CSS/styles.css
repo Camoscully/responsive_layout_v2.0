@@ -1,0 +1,67 @@
+@import "CSS/normalizer.css";
+
+/*---Type Selectors---*/
+
+body {
+  display: inline-block;
+  background-color: #f7f4f4;
+  font-family: , sans-serif;
+  font-size: 16px;
+}
+
+li a {
+  Padding: 30px 100px;
+  text-decoration: none;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: grey;
+}
+
+main {
+  background-color: white;
+}
+
+
+/*---Base Class Selectors for Elements---*/
+
+.main-header {
+  text-align: center;
+}
+
+.main-nav {
+  list-style-type: none;
+}
+
+.main-nav li {
+  margin: 5px 0;
+  padding: 10px 0;
+  background-color: white;
+  display: block;
+}
+
+.nav {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.top-section {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.top-img {
+  width: 70%;
+  max-width: 367px;
+  margin: 30px auto 10px;
+}
+
+.img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/*---Type Selected Psuedo Affects---*/
+
+a:hover {
+  color: #36acd0;
+}
