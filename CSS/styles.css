@@ -5,7 +5,7 @@
 body {
   display: inline-block;
   background-color: #f7f4f4;
-  font-family: , sans-serif;
+  font-family: Bellefair, sans-serif, cursive;
   font-size: 16px;
 }
 
@@ -17,10 +17,22 @@ li a {
   color: grey;
 }
 
+h1 {
+  position: relative;
+}
+
 main {
   background-color: white;
 }
 
+a {
+  text-decoration-line: none;
+  color: grey;
+}
+
+hr {
+  width: 50%;
+}
 
 /*---Base Class Selectors for Elements---*/
 
@@ -57,11 +69,103 @@ main {
 
 .img {
   margin: 0 auto;
-  width: 100%;
+  width: 95%;
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  weight: bolder;
+}
+
+.footer-nav {
+ border-top: solid 1px grey;
+}
+
+
+/*---Page Layout---*/
+
+main {
+  padding: 30px 0;
+}
+
+.main-1 img,
+.main-2 img {
+  padding-top: 1em;
+}
+
+.expertise {
+  padding: 20px 0;
+  background-color: white;
+  margin: 30px 0;
+}
+
+.footer-section {
+  padding-bottom: 50px;
+}
+
+#footer-left {
+  float: left;
+  text-transform: none;
+}
+
+.footer-nav h4 {
+  float: right;
+  text-transform: uppercase;
 }
 
 /*---Type Selected Psuedo Affects---*/
 
 a:hover {
   color: #36acd0;
+}
+
+/*---Clearfix Rule---*/
+
+.clearfix:after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+/*---Media Queries---*/
+
+@media (min-width:768px) {
+
+
+
+.main-nav {
+  text-align: center;
+  margin: auto;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.main-nav li a {
+  padding: 30px 30px;
+}
+
+.top-img {
+  float: right;
+  width: 40%;
+  margin: 40px auto;
+}
+
+.intro-text {
+  padding: 80px 40px 0 0;
+  font-size: 1.5em;
+}
+
+.main-1 img,
+.main-2 img {
+  display: inline-block;
+  max-width:350px;
+  width: 85%;
+}
+
 }
