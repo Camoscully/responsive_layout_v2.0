@@ -5,7 +5,7 @@
 body {
   display: inline-block;
   background-color: #e2ffee;
-  font-family: Macondo, sans-serif, Bellefair, cursive;
+  font-family: Macondo, sans-serif, Bellefair;
   font-size: 16px;
 }
 
@@ -113,9 +113,29 @@ main {
 }
 
 .expertise {
-  padding: 20px 0;
+  padding: 20px 0 25px;
   background-color: #fcf4ef;
   margin: 30px 0;
+  position: relative;
+}
+
+.ex-sec {
+  position: relative;
+}
+
+#expertise-top {
+  border-top: 2px solid black;
+  position: absolute;
+  top: 35px;
+  margin: 0 25%;
+  width: 50%;
+}
+
+#expertise-bot {
+  border-bottom: 2px solid black;
+  position: absolute;
+  margin: 0 25%;
+  width: 50%;
 }
 
 .footer-section {
@@ -126,15 +146,20 @@ main {
   float: left;
   text-transform: none;
   font-family: Bellefair;
+  display: initial;
 }
 
-#footer-buttons {
-  display: none;
+#top-button {
+  display: initial;
 }
 
 .footer-nav h4 {
   float: right;
   text-transform: uppercase;
+}
+
+.footer-nav h4  {
+  display: none;
 }
 
 /*---Type Selected Psuedo Affects---*/
@@ -153,109 +178,113 @@ a:hover {
 
 /*---Tablet Media Queries---*/
 
-@media (min-width:768px) and (max-width:1024px) {
+@media (min-width:768px) {
 
 
 
-.main-nav {
-  text-align: center;
-  margin: auto;
-}
+  .main-nav {
+    text-align: center;
+    margin: auto;
+  }
 
-.main-nav li {
-  display: inline-block;
-  margin: 0 10px;
-}
+  .main-nav li {
+    display: inline-block;
+    margin: 0 10px;
+  }
 
-.main-nav li a {
-  padding: 30px 30px;
-}
+  .main-nav li a {
+    padding: 30px 30px;
+  }
 
-.top-img {
-  float: right;
-  width: 40%;
-  margin: 40px auto;
-}
+  .top-img {
+    float: right;
+    width: 40%;
+    margin: 40px auto;
+  }
 
-.intro-text {
-  padding: 60px 0 0 30px;
-  font-size: 1.5em;
-  max-width: 50%;
-  text-align: left;
-}
+  .intro-text {
+    padding: 60px 0 0 30px;
+    font-size: 1.5em;
+    max-width: 50%;
+    text-align: left;
+  }
 
 
 
-.main-cont img {
-  max-width:100%;
-  width: 96%;
-  max-height: 100%;
-}
+  .main-cont img {
+    max-width:100%;
+    width: 96%;
+    max-height: 100%;
+  }
 
-.m1-i1,
-.m1-i3,
-.m2-i2 {
-  float: left;
-  width: 50%;
-  position: relative;
-  padding-bottom: 160px;
-}
+  .m1-i1,
+  .m1-i3,
+  .m2-i2 {
+    float: left;
+    width: 50%;
+    position: relative;
+    padding-bottom: 160px;
+  }
 
-.m1-i2,
-.m2-i1,
-.m2-i3 {
-  float: left;
-  width: 50%;
-  position: relative;
-  padding-bottom: 160px;
-}
+  .m1-i2,
+  .m2-i1,
+  .m2-i3 {
+    float: left;
+    width: 50%;
+    position: relative;
+    padding-bottom: 160px;
+  }
 
-.m1-d1,
-.m1-d2,
-.m1-d3,
-.m2-d1,
-.m2-d2,
-.m2-d3 {
-  width: 70%;
-  padding: 0;
-  position: absolute;
-  top: 62%;
-  right: 15%;
-}
+  .m1-d1,
+  .m1-d2,
+  .m1-d3,
+  .m2-d1,
+  .m2-d2,
+  .m2-d3 {
+    width: 70%;
+    padding: 0;
+    position: absolute;
+    top: 62%;
+    right: 15%;
+  }
 
-.m1-d2,
-.m2-d1,
-.m2-d3 {
-  float: left;
+  .m1-d2,
+  .m2-d1,
+  .m2-d3 {
+    float: left;
 
-}
+  }
 
-.m1-d1,
-.m1-d3,
-.m2-d2 {
-  float: left;
-}
+  .m1-d1,
+  .m1-d3,
+  .m2-d2 {
+    float: left;
+  }
 
-.expertise section {
-  font-size: 1.25em;
-}
+  .expertise section {
+    font-size: 1.25em;
+  }
 
-.contact-br {
-  display: initial;
-}
+  .contact-br {
+    display: initial;
+  }
 
-.footer-bar h4 {
-  padding: 0 10px;
-  float: right;
-}
+  .footer-bar h4 {
+    padding: 0 10px;
+    float: right;
+  }
 
-#footer-buttons {
-  display: initial;
-}
+  #footer-buttons {
+    display: initial;
+  }
 
-#top-button {
-  display: none;
-}
+  #top-button {
+    display: none;
+  }
+
+  .footer-nav h4 {
+    display: initial;
+  }
 
 }
 
@@ -370,5 +399,10 @@ a:hover {
 
   #top-button {
     display: none;
+  }
+
+  .footer-nav h4 {
+    display: initial;
+  }
 
 }
